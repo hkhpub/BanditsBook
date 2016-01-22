@@ -12,7 +12,7 @@ stats <- ddply(results,
                function (df) {mean(df$Reward)})
 ggplot(stats, aes(x = T, y = V1, group = Epsilon, color = Epsilon)) +
   geom_line() +
-  ylim(0, 1) +
+  ylim(0, 2) +
   xlab("Time") +
   ylab("Average Reward") +
   ggtitle("Performance of the Epsilon Greedy Algorithm")
